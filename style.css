@@ -32,7 +32,7 @@
     --gradient-dark-circular-blue: linear-gradient(-135deg,rgba(146,80,251,.5) 0%,rgba(77,89,254,.5) 84%,rgba(var(--color-blue-rgb),0.5) 100%);
 
 
-    /* Changer la couleur du texte danger */
+    /* Changer la couleur du texte bootstrap par défaut */
     --bs-danger-rgb: 255,117,179;
     --bs-warning-rgb: 255,124,107;
     --bs-success-rgb: 135,227,207;
@@ -121,7 +121,7 @@
 .menu-item-colored:hover::after{
     width: 100%;
 }
-
+/* --- Menu latéral ---*/
 .social-links i{
     padding: 5px;
     font-size:25px;
