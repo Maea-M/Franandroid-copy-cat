@@ -1,305 +1,293 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Frandroid copy cat en bootstrap</title>
-</head>
-<body class="bg-dark text-light">
-    <header>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Frandroid</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <link href="style.css" rel="stylesheet"/>
+    </head>
+
+    <body class="bg-dark text-light">
+
+        <!-- Start Header-->
+        <header>
         <nav class="navbar navbar-dark bg-dark">
             <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <a class="navbar-brand" href="#">
-                    <img style="width: 200px;" src="https://www.frandroid.com/wp-content/themes/humanoid-redesign/assets/images/2019-redesign/logos/frandroid.svg"/>
-                </a>
-
-                <div class="nav-item ">
-                    <a href="#" class="menu-item-colored menuAlwaysShow text-info">Actus</a>
-                </div>
-
-                <div class="nav-item ">
-                    <a href="#" class="menu-item-colored menuAlwaysShow text-danger">Tests</a>
-                </div>
-
-                <div class="nav-item">
-                    <a href="#" class="menu-item-colored menuAlwaysShow text-success">Bons plans</a>
-                </div>
-
-                <div class="nav-item">
-                    <a href="#" class="menu-item-colored menuAlwaysShow text-warning">Tutos</a>
-                </div>
-
-                <div class="nav-item">
-                    <a href="#" class="menu-item-colored menuAlwaysShow text-primary">Guides</a>
-                </div>
-
-                <div class="offcanvas offcanvas-start text-bg-dark" id="navbarSupportedContent">
-                <div class="offcanvas-header container">
-                
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img style="width: 200px;" src="https://www.frandroid.com/wp-content/themes/humanoid-redesign/assets/images/2019-redesign/logos/frandroid.svg"/>
+            </a>
+            <div class="nav-item ">
+                <a href="#" class="menu-item-colored menuAlwaysShow text-info">Actus</a>
+            </div>
+            <div class="nav-item ">
+                <a href="#" class="menu-item-colored menuAlwaysShow text-danger">Tests</a>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="menu-item-colored menuAlwaysShow text-success">Bons plans</a>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="menu-item-colored menuAlwaysShow text-warning">Tutos</a>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="menu-item-colored menuAlwaysShow text-primary">Guides</a>
+            </div>
+            <div class="offcanvas offcanvas-start text-bg-dark" id="navbarSupportedContent">
+            <div class="offcanvas-header container">
                 <div>
-                    <button type="button" class="btn-close btn-close-white me-2" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    <img style="width: 200px;" src="https://www.frandroid.com/wp-content/themes/humanoid-redesign/assets/images/2019-redesign/logos/frandroid.svg"/>
+                <button type="button" class="btn-close btn-close-white me-2" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <img style="width: 200px;" src="https://www.frandroid.com/wp-content/themes/humanoid-redesign/assets/images/2019-redesign/logos/frandroid.svg"/>
                 </div>
-                
                 <div class="social-links text-primary">
-                    <i class="bi bi-twitter"></i>
-                    <i class="bi bi-instagram"></i>
-                    <i class="bi bi-facebook"></i>
-                    <i class="bi bi-rss"></i>
-                    <i class="bi bi-youtube"></i>
-                    <i class="bi bi-snapchat"></i>
-                    <i class="bi bi-twitch"></i>
-                </div>
-
-            <!--Start Panneau latéral de menu-->
-            </div>
-                <div class="offcanvas-body container">
-                    <div class="row row-cols-3 megaMenu">
-                        <div class="megaMenu-categorie">
-                            <a href="#" class="megamenu-categorie-title">Titre</a>
-                            <ul>
-                                <li><a href="#">Sous menu</a></li>
-                                <li>
-                                    <ul>
-                                        <li><a href="#">Sous sous menu</a></li>
-                                        <li><a href="#">Sous sous menu</a></li>
-                                        <li><a href="#">Sous sous menu</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Liens</a></li>
-                                <li><a href="#">Liens</a></li>
-                                <li><a href="#">Liens</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="megaMenu-categorie">
-                            <a href="#" class="megamenu-categorie-title">Titre</a>
-                            <ul>
-                                <li><a href="#">Sous menu</a></li>
-                                <li>
-                                    <ul>
-                                        <li><a href="#">Sous sous menu</a></li>
-                                        <li><a href="#">Sous sous menu</a></li>
-                                        <li><a href="#">Sous sous menu</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Liens</a></li>
-                                <li><a href="#">Liens</a></li>
-                                <li><a href="#">Liens</a></li>
-                            </ul>
-                        </div>
-                
-                        <div class="megaMenu-categorie">
-                            <a href="#" class="megamenu-categorie-title">Titre</a>
-                            <ul>
-                                <li><a href="#">Sous menu</a></li>
-                                <li>
-                                    <ul>
-                                        <li><a href="#">Sous sous menu</a></li>
-                                        <li><a href="#">Sous sous menu</a></li>
-                                        <li><a href="#">Sous sous menu</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Liens</a></li>
-                                <li><a href="#">Liens</a></li>
-                                <li><a href="#">Liens</a></li>
-                            </ul>
-                        </div>
-                        
-                        <div class="megaMenu-categorie">
-                            <a href="#" class="megamenu-categorie-title">Titre</a>
-                            <ul>
-                                <li><a href="#">Sous menu</a></li>
-                                <li>
-                                    <ul>
-                                        <li><a href="#">Sous sous menu</a></li>
-                                        <li><a href="#">Sous sous menu</a></li>
-                                        <li><a href="#">Sous sous menu</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Liens</a></li>
-                                <li><a href="#">Liens</a></li>
-                                <li><a href="#">Liens</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="megaMenu-categorie">
-                            <a href="#" class="megamenu-categorie-title">Titre</a>
-                            <ul>
-                                <li><a href="#">Sous menu</a></li>
-                                <li>
-                                    <ul>
-                                        <li><a href="#">Sous sous menu</a></li>
-                                        <li><a href="#">Sous sous menu</a></li>
-                                        <li><a href="#">Sous sous menu</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Liens</a></li>
-                                <li><a href="#">Liens</a></li>
-                                <li><a href="#">Liens</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-rss"></i>
+                <i class="bi bi-youtube"></i>
+                <i class="bi bi-snapchat"></i>
+                <i class="bi bi-twitch"></i>
                 </div>
             </div>
-            <!--End Menu latéral-->
+            <div class="offcanvas-body container">
+                <div class="row row-cols-3 megaMenu">
+                <div class="megaMenu-categorie">
+                    <a href="#" class="megamenu-categorie-title">Titre</a>
+                    <ul>
+                        <li><a href="#">Sous menu</a></li>
+                        <li>
+                        <ul>
+                            <li><a href="#">Sous sous menu</a></li>
+                            <li><a href="#">Sous sous menu</a></li>
+                            <li><a href="#">Sous sous menu</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="#">Liens</a></li>
+                        <li><a href="#">Liens</a></li>
+                        <li><a href="#">Liens</a></li>
+                    </ul>
+                </div>
+                <div class="megaMenu-categorie">
+                    <a href="#" class="megamenu-categorie-title">Titre</a>
+                    <ul>
+                        <li><a href="#">Sous menu</a></li>
+                        <li>
+                        <ul>
+                            <li><a href="#">Sous sous menu</a></li>
+                            <li><a href="#">Sous sous menu</a></li>
+                            <li><a href="#">Sous sous menu</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="#">Liens</a></li>
+                        <li><a href="#">Liens</a></li>
+                        <li><a href="#">Liens</a></li>
+                    </ul>
+                </div>
+                <div class="megaMenu-categorie">
+                    <a href="#" class="megamenu-categorie-title">Titre</a>
+                </div>
+                <div class="megaMenu-categorie">
+                    <a href="#" class="megamenu-categorie-title">Titre</a>
+                    <ul>
+                    <li><a href="#">Sous menu</a></li>
+                    <li>
+                        <ul>
+                        <li><a href="#">Sous sous menu</a></li>
+                        <li><a href="#">Sous sous menu</a></li>
+                        <li><a href="#">Sous sous menu</a></li>
+                        </ul>
+                    </li>
+                    </ul>
+                </div>
+                <div class="megaMenu-categorie">
+                <a href="#" class="megamenu-categorie-title">Titre</a>
+                <ul>
+                    <li><a href="#">Sous menu</a></li>
+                    <li><a href="#">Liens</a></li>
+                    <li><a href="#">Liens</a></li>
+                    <li><a href="#">Liens</a></li>
+                </ul>
+            </div>
+            
+                </div>
+            </div>
+            </div>
         </nav>
-    </header>
+        </header>
 
-    <main class="container">
+        <main class="container">
         <!-- Les catégories-->
-        <div class="list-categorie text-center">
+        <div class="list-categorie text-center my-2">
             <div class="list-item-categorie">
-                <div>
+            <div>
                 <img src="	https://www.frandroid.com/wp-content/themes/humanoid-redesign/dist/svg/e53c693f687eb4f905f7.svg" />
-                </div>
-                <a href="#">Smartphone</a>
             </div>
-
+            <a href="#">Smartphone</a>
+            </div>
             <div class="list-item-categorie">
-                <div>
+            <div>
                 <img src="	https://www.frandroid.com/wp-content/themes/humanoid-redesign/dist/svg/f31f73e2dc8dc3bc040e.svg" />
-                </div>
-                <a href="#">Ordinateurs</a>
             </div>
-
+            <a href="#">Ordinateurs</a>
+            </div>
             <div class="list-item-categorie">
-                <div>
+            <div>
                 <img src="https://www.frandroid.com/wp-content/themes/humanoid-redesign/dist/svg/38199ead4fb6dac4aa37.svg" />
-                </div>
-                <a href="#">Auto Mobilité</a>
             </div>
-            
+            <a href="#">Auto Mobilité</a>
+            </div>
             <div class="list-item-categorie">
-                <div>
+            <div>
                 <img src="https://www.frandroid.com/wp-content/themes/humanoid-redesign/dist/svg/0b2fc9be629382b80b51.svg" />
-                </div>
-                <a href="#">TV</a>
             </div>
-            
+            <a href="#">TV</a>
+            </div>
             <div class="list-item-categorie">
-                <div>
+            <div>
                 <img src="	https://www.frandroid.com/wp-content/themes/humanoid-redesign/dist/svg/cc82fa525a517df7d3a6.svg" />
-                </div>
-                <a href="#">Maison connectée</a>
             </div>
-            
+            <a href="#">Maison connectée</a>
+            </div>
             <div class="list-item-categorie">
-                <div>
+            <div>
                 <img src="https://www.frandroid.com/wp-content/themes/humanoid-redesign/dist/svg/dc03469116f3114e462b.svg" />
-                </div>
-                <a href="#">Audio</a>
             </div>
-            
+            <a href="#">Audio</a>
+            </div>
             <div class="list-item-categorie">
-                <div>
+            <div>
                 <img src="https://www.frandroid.com/wp-content/themes/humanoid-redesign/dist/svg/8c9987468f1124c3e284.svg" />
-                </div>
-                <a href="#">Gaming</a>
             </div>
-
+            <a href="#">Gaming</a>
+            </div>
             <div class="list-item-categorie">
-                <div>
+            <div>
                 <img src="	https://www.frandroid.com/wp-content/themes/humanoid-redesign/dist/svg/4f40ac12cca52c604b62.svg" />
-                </div>
-                <a href="#">Wearables</a>
-                </div>
             </div>
-
+            <a href="#">Wearables</a>
+            </div>
+        </div>
         <!-- Ligne sur les french days-->
         <div class="row row-cols-2 row-cols-lg-4">
             <div class="col" id="barcolorsBackgound">
             <!-- <img src="https://www.frandroid.com/wp-content/themes/humanoid-redesign/dist/svg/eecc6ea811fd19d92d88.svg"/> -->
             <p id="pubResponsiveTitle" class="fw-bold d-block d-lg-none">French Days 2022</p>
             </div>
-
             <div class="col d-none d-lg-block">
-                <p class="title-pubBar">French Days 2022</p>
+            <p class="title-pubBar">French Days 2022</p>
             </div>
-
             <div class="col d-none d-lg-block">
-                <p class="title-pubBar fw-bolder">Les meilleures offres en direct</p>
+            <p class="title-pubBar fw-bolder">Les meilleures offres en direct</p>
             </div>
-
             <div class="col text-danger fw-bold text-end">
-                <span class="badge text-bg-danger">37</span> Articles 
+            <span class="badge text-bg-danger">37</span> Articles 
             </div>
         </div>
 
-        <!--Ligne avec des boutons-->
-        <div class="list-buttons">
+        <!-- Liste de boutons -->
+        <div class="list-buttons my-2">
             <div class="">
-                <a class="btn btn-outline-danger rounded-pill"><i class="bi bi-lightning-charge-fill"></i> Le club honor</a>
+            <a class="btn btn-outline-danger rounded-pill"><i class="bi bi-lightning-charge-fill"></i> Le club honor</a>
             </div>
             <div class="">
-                <a class="btn btn-outline-primary rounded-pill"><i class="bi bi-lightning-charge-fill"></i> Samsung Galaxy S22</a>
+            <a class="btn btn-outline-primary rounded-pill"><i class="bi bi-lightning-charge-fill"></i> Samsung Galaxy S22</a>
             </div>
             <div class="">
-                <a class="btn btn-outline-primary rounded-pill"><i class="bi bi-lightning-charge-fill"></i> Test nothing phone (1)</a>
+            <a class="btn btn-outline-primary rounded-pill"><i class="bi bi-lightning-charge-fill"></i> Test nothing phone (1)</a>
             </div>
             <div class="">
-                <a class="btn btn-outline-primary rounded-pill"><i class="bi bi-lightning-charge-fill"></i> Box internet</a>
+            <a class="btn btn-outline-primary rounded-pill"><i class="bi bi-lightning-charge-fill"></i> Box internet</a>
             </div>
             <div class="">
-                <a class="btn btn-outline-primary rounded-pill"><i class="bi bi-lightning-charge-fill"></i> Meilleurs smartphones</a>
+            <a class="btn btn-outline-primary rounded-pill"><i class="bi bi-lightning-charge-fill"></i> Meilleurs smartphones</a>
             </div>
             <div class="">
-                <a class="btn btn-outline-primary rounded-pill"><i class="bi bi-lightning-charge-fill"></i> Forfait mobile</a>
+            <a class="btn btn-outline-primary rounded-pill"><i class="bi bi-lightning-charge-fill"></i> Forfait mobile</a>
             </div>
             <div class="">
-                <a class="btn btn-outline-primary rounded-pill"><i class="bi bi-lightning-charge-fill"></i> 5G</a>
+            <a class="btn btn-outline-primary rounded-pill"><i class="bi bi-lightning-charge-fill"></i> 5G</a>
             </div>
             <div class="">
-                <a class="btn btn-outline-primary rounded-pill"><i class="bi bi-lightning-charge-fill"></i> iPhone 13</a>
+            <a class="btn btn-outline-primary rounded-pill"><i class="bi bi-lightning-charge-fill"></i> iPhone 13</a>
             </div>
         </div>
-    
+
         <!-- Les articles-->
         <div>
-            <h2>Les articles à la une</h2>
-            <div class="article-block">
+            <h2 class="mb-3">Les articles à la une</h2>
+            <section class="article-list row">
+            <!-- <article class="article-block col-7">
                 <a href="#">
-                    <div class="article-image rounded-4">
-                        <picture>
-                            <img src="images/G-pixel.jpg"/>
-                        </picture>
+                <div class="article-image rounded-4">
+                    <picture>
+                    <img src="img/G-pixel.jpg"/>
+                    </picture>
+                </div>
+                <div class="article-link">
+                    <div>
+                    <h3>Pixel 7 et Pixel 7 Pro : voici les points forts sur lesquels Google va insister</h3>
                     </div>
-                    <div class="article-link">
-                        <div>
-                            <h3>Pixel 7 et Pixel 7 Pro : voici les points forts sur lesquels Google va insister</h3>
-                        </div>
-                    </div>
+                </div>
                 </a>
-                <article class="col-2">
-                    <div class="card">
-                        <img src="" alt="" class="card-image-top">
-                        <div class="card-body bg-dark">
-                            <h5 class="card-title">Overwatch 2 : quelles configurations PC pour jouer?</h5>
-                        </div>
+            </article> -->
+            <article class="col-7">
+                <div class="card border-dark bg-transparent article-card shadow" style="width: 100%;">
+                    <div class="outer">
+                    <img src="/images/G-pixel.jpg" class="card-img-top border-frandroid" alt="...">
+                    <div class="overlay border-frandroid">
                     </div>
-                    <div class="card">
-                        <img src="" alt="" class="card-image-top">
-                        <div class="card-body bg-dark">
-                            <h5 class="card-title">Série limitée : ce forfait mobile 50 Go...</h5>
-                        </div>
+                    <h3 class="text">
+                        Pixel 7 et Pixel 7 Pro : voici les points forts sur lesquels Google va insister
+                    </h3>
                     </div>
-                </article>
+                </div>
+            </article>
+            <article class="col-2">
+                <div class="card border-none bg-transparent article-card shadow-light border-frandroid" style="width: 100%;">
+                    <div class="outer">
+                    <img src="/images/overwatch.webp" class="card-img-top border-frandroid" alt="...">
+                    <div class="overlay border-frandroid-top">
+                    </div>
+                    </div>
+                <div class="card-body  border-frandroid-bottom">
+                    <h5 class="card-title fs-6">Overwatch 2 : quelles configurations PC pour jouer ?</h5>
+                </div>
+                </div>
+            </article>
+            <article class="col-2">
+                <div class="card border-none bg-transparent article-card shadow-light border-frandroid" style="width: 100%;">
+                <div class="outer">
+                    <img src="/images/galaxy.webp" class="card-img-top border-frandroid-top" alt="...">
+                    <div class="overlay border-frandroid-top">
+                    </div>
+                </div>
+                <div class="card-body border-frandroid-bottom">
+                    <h5 class="card-title fs-6">Série limitée : ce forfait mobile 50 Go est l’offre à saisir du ...</h5>
+                </div>
+                </div>
+            </article>
+            </section>
+            
+        </div>
+
+        <!-- Sélection de la rédaction -->
+        <div class="selection-redaction border-frandroid my-3">
+            <img class="border-frandroid selection-redaction-img" src="images/telephone-relais.jpg" />
+            <div class="border-frandroid selection-redaction-text">
+            <h6>La sélection de la rédaction</h6>
+            <p>Cet hiver, les réseaux de téléphonie mobile risquent d'être coupés : voici ce qu'il faut savoir</p>
             </div>
         </div>
-    </main>
+        <div class="gradient-line"></div>
+        </main>
 
+        <footer>
 
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
-</body>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </body>
 </html>
